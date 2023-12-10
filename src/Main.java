@@ -2,13 +2,13 @@ public class Main {
     public static void main(String[] args) {
         int amount = 13_676; // Ввод рублей, можно вводить что угодно.
         boolean miles = amount >= 20; // Наличие бонусной мили: Да/Нет.
-        int x; // Единичное значение мили.
+        int condition; // Единичное значение мили.
         if (miles) {
-            x = 1; // Если да.
+            condition = 1; // Если да.
         } else {
-            x = 0; // Если нет.
+            condition = 0; // Если нет.
         }
-        int a = amount * x / 20; // Расчет бонусной мили.
-        System.out.println("Мили : " + a); // Вывод итоговой бонусной мили.
+        int result = amount * condition / 20; // Расчет бонусной мили.
+        System.out.println("Мили : " + result); // Вывод итоговой бонусной мили.
     }
 }
